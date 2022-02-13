@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="colors.css">
+    <title>fromhilllry ⁺˳✧༚</title>
+    <style media="screen">
+      :root {
+        --primaryColor: #945a3f;
+      }
+      html{scroll-behavior: smooth;}
+      *{box-sizing: border-box;}
+      .toTop{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: rgba(50,50,50,0.5);
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+      }
+      .linkTop{
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        display: block;
+      }
+      .toTop:hover{
+        box-shadow: 0px 0px 10px 2px black;
+        background-color: rgba(10,10,10,07);
+      }
+      .footer{
+        background-color: var(--primaryColor);
+      }
+    </style>
+  </head>
+  <body>
+<!-- Horizontal Navigation -->
+    <nav class="nav_top">
+      <a href="#">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#shop">SHOP</a>
+    </nav>
+<!-- Top Slideshow -->
+    <div class="pg1">
+      <h1>fromhilllry</h1>
+      <p>life isn't perfect, but your outfit can be ⁺˳✧༚</p>
+      <a href="#jewelry">SHOP NOW</a>
+      <div class="pg1Slide-wrapper">
+        <div class="pg1Cont1">
+          <img src="images/cover.png" alt="cover" class="blurCover">
+        </div>
+        <div class="pg1Cont2">
+          <img src="images/building.jpg" alt="cover">
+        </div>
+        <div class="pg1Cont3">
+          <img src="images/3.jpg" alt="cover">
+        </div>
+      </div>
+    </div>
+<!-- Page 2 -->
+  <div id="jewelry" class="pg2">
+    <div class="pg2figCont">
+      <h1>My <i>Selection</i><br><i>of</i> Jewelry</h1>
+<!-- Figure Container for Jewelry Images -->
+
+      <figure class="pg2fig1">
+          <a href="#modalWindow" class="open"><img src="images/products/18.jpg" alt="" class="jewel"></a>
+      </figure>
+      <figure class="pg2fig2">
+        <a href="#modalWindow2" class="open2"><img src="images/products/1.jpg" alt="face earrings" class="jewel2"></a>
+      </figure>
+      <figure class="pg2fig3">
+        <a href="#modalWindow3" class="open3"><img src="images/products/17.jpg" alt="" class="jewel3"></a>
+      </figure>
+      <!-- Button for Pieces-->
+    </div>
+    <div class="pg2Button">
+      <a href="#shop">VIEW MORE PIECES</a>
+    </div>
+  </div>
+  <!-- Modal Window 1 -->
+      <form action="checkout.html" method="post">
+        <div class="modalBack" id= modalWindow>
+          <div class="modalFront">
+            <a href="#jewelry" class="close"><img src="images/icons/close.png" alt="close"></a>
+            <div class="imgCont">
+              <img src="images/products/18.jpg" alt="">
+            </div>
+            <div class="info">
+              <p>BABY BLUE <br> DROP EARRINGS</p>
+              <p>Jewelry</p>
+              <p>These earrings are handmade so expect minute differences in each and every one of them.<br><br><b>NOT</b> tarnish proof!</p>
+              <span class="Price">$8.00</span>
+              <hr>
+              <input type="submit" class="add" value="ADD TO BAG" onclick="item1();"></input>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <!-- ADD TO BAG ITEM 1 -->
+      <script type="text/javascript">
+        function item1(){
+          let itemN = 'BABY BLUE DROP EARRINGS';
+          localStorage.setItem('item_name',itemN);
+          let itemP = 8.00;
+          localStorage.setItem('item_price',itemP)
+           alert(`${itemN} added to bag!`);
+        }
+      </script>
+  <!-- Modal Window 2 -->
+      <form action="checkout.html" method="post">
+        <div class="modalBack2" id= modalWindow2>
+          <div class="modalFront2">
+            <a href="#jewelry" class="close"><img src="images/icons/close.png" alt="close"></a>
+            <div class="imgCont2">
+              <img src="images/products/1.jpg" alt="">
+            </div>
+            <div class="info2">
+              <p>SILVER FACE <br> EARRINGS</p>
+              <p>Jewelry</p>
+              <p>Sterling silver face earrings. Push back closure.<br><br>Length: 0.75"</p>
+              <span class="Price2">$10.00</span>
+              <hr>
+              <input type="submit" class="add" value="ADD TO BAG" onclick="item2();"></input>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <!-- ADD TO BAG ITEM 2 -->
+      <script type="text/javascript">
+        function item2(){
+          let itemN2 = 'SILVER FACE EARRINGS';
+          localStorage.setItem('item_name2',itemN2);
+          let itemP2 = 10.00;
+          localStorage.setItem('item_price2',itemP2)
+          alert(`${itemN2} added to bag!`);
+        }
+      </script>
+  <!-- Modal Window 3 -->
+      <form action="checkout.html" method="post">
+        <div class="modalBack3" id= modalWindow3>
+          <div class="modalFront3">
+            <a href="#jewelry" class="close"><img src="images/icons/close.png" alt="close"></a>
+            <div class="imgCont3">
+              <img src="images/products/17.jpg" alt="">
+            </div>
+            <div class="info3">
+              <p>AMBER BROWN <br> RESIN EARRINGS</p>
+              <p>Jewelry</p>
+              <p>Amber resin creole earrings. Push back closure.<br><br>Length: 1.25"</p>
+              <span class="Price3">$16.00</span>
+              <hr>
+              <input type="submit" class="add" value="ADD TO BAG" onclick="item3();"></input>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <!-- ADD TO BAG ITEM 3 -->
+      <script type="text/javascript">
+        function item3(){
+          let itemN3 = 'AMBER BROWN RESIN EARRINGS';
+          localStorage.setItem('item_name3',itemN3);
+          let itemP3 = 16.00;
+          localStorage.setItem('item_price3',itemP3)
+          alert(`${itemN3} added to bag!`);
+        }
+      </script>
+<!-- Page 3 -->
+  <div id="about" class="pg3">
+    <h1>fromhilllry</h1>
+    <p><i class="pg3Name">fromhilllry</i> is my pre-loved online shop of curated modern and casual streetwear clothing. What started off as a <br> hobby that came out of the pandemic, became a small online shop that has become a way for me to combine <br>my interests in fashion and love for fun forms of self expression. My shop continues to keep me learning,<br> creating, and challenging myself artistically. With an ambition to help curb fast fashion and promote conscious<br> consumption, I hope to share my favorite finds and pieces that will help you put together the perfect outfit!</p>
+  </div>
+<!-- Page 4 -->
+    <div id="shop" class="pg4">
+      <h1>Selected <i>from</i><br><i>my</i> Depop</h1>
+      <div class="pg4Cont1">
+        <div class="product">
+          <a href="https://www.depop.com/products/hilllry-yellow-mini-handbag-super-cute/" target="blank"><img src="images/products/7.jpg" alt=""></a>
+          <a href="https://www.depop.com/products/hilllry-ivory-abstract-print-button-down/" target="blank"><img src="images/products/10.jpg" alt=""></a>
+          <a href="https://www.depop.com/products/hilllry-brand-new-princess-polly-new/" target="blank"><img src="images/products/6.jpg" alt=""></a>
+          <a href="https://www.depop.com/products/hilllry-beige-midi-skirt-approximate-measurements/" target="blank"><img src="images/products/11.jpg" alt=""></a>
+        </div>
+        <span>$18.00</span>
+        <span>$45.00</span>
+        <span>$40.00</span>
+        <span>$48.00</span>
+        <br>
+        <br>
+        <div class="product2">
+          <a href="https://www.depop.com/products/hilllry-zara-z1975-navy-floral-lace-up/" target="blank"><img src="images/products/8.jpg" alt=""></a>
+          <a href="https://www.depop.com/products/hilllry-brown-maid-top-best-fit/" target="blank"><img src="images/products/13.jpg" alt=""></a>
+          <a href="https://www.depop.com/products/hilllry-campaign-international-express-brown-dress/" target="blank"><img src="images/products/16.jpg" alt=""></a>
+          <a href="https://www.depop.com/products/hilllry-coffee-marble-hoop-earrings-diameter/" target="blank"><img src="images/products/15.jpg" alt=""></a>
+        </div>
+        <span>$72.00</span>
+        <span>$22.00</span>
+        <span>$42.00</span>
+        <span>$16.00</span>
+        <br>
+      </div>
+    </div>
+    <div class="pg4br">
+      <h1>from me, for you. ⁺˳✧༚</h1>
+    </div>
+<!-- Page 5 -->
+    <div class="pg5" id="News">
+      <div class="pg5Cont1">
+        <h5 class="pg5line">Be the first to know about<br>new pieces and drops.</h6>
+        <h1 class="pg5line2">Join My<br>Newsletter!</h1>
+        <!-- Javascript #1 Use event object to display a message typed and enteredin an input field -->
+          <form class="newsLet" method="get">
+            <input type="text" class="inputName" placeholder="Full Name">
+            <input type="text"  placeholder="Email">
+            <input type="submit">
+          </form>
+          <p class="display"></p>
+        <!-- Javascript #2 Use event object to prevent the default use of an "a" tag -->
+        <h6 class="pg5line3">By signing up, you agree with my<br><a href="" class="terms"><u>Terms & Conditions</u></a> and Privacy Policy.</p>
+      </div>
+      <div class="pg5Cont2">
+        <img src="images/newsletter.jpg" alt="collage">
+      </div>
+    </div>
+<!-- Page 6 -->
+    <div class="pg6">
+        <div class="bColumnLeft">
+          <h1>fromhilllry</h1>
+        </div>
+        <div class="bColumnMiddle"></div>
+        <div class="bColumnRight">
+          <div class="bColumnRighta">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#jewelry">Jewelry</a>
+          </div>
+          <p>Socials</p>
+          <a href="https://www.instagram.com/fromhilllry/" target="_blank"><img src="images/icons/instagram.png" alt=""></a>
+          <a href="https://www.depop.com/hilllry/" target="blank"><img src="images/icons/link.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <footer>©️2022 fromhilllry by Hillary Ly Pham. All Rights Reserved.</footer>
+    <!-- Javascript #3 Use addEventListener to add a scroll event to the window when to hide or show an element -->
+      <div class="toTop">
+        <a href="#" class="linkTop">&#x261D;<br>To Top</a>
+      </div>
+
+    <script src="main.js">
+
+    </script>
+  </body>
+</html>
