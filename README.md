@@ -1,3 +1,3 @@
-# CUNY-Micro-Credential-Final-Project
+# fromhilllry sales website
 
-Created a sales website applying features learned in the course
+Started as a final sales website project for the CUNY Micro-Credential applying HTML, CSS, and Javascript. 
